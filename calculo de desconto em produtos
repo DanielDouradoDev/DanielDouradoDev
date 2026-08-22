@@ -1,0 +1,112 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyN/SuQbaJabecoy62Xj1fsy",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/DanielDouradoDev/DanielDouradoDev/blob/main/calculo%20de%20desconto%20em%20produtos\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def calcular_media():"
+      ],
+      "metadata": {
+        "id": "28b9odNz35TK"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 13,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XiRafyzs_hhj",
+        "outputId": "71b3ec00-5a4d-42b1-e3d3-b9b718e677ec"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Produto: Notebook\n",
+            "Preço original: R$3500.00\n",
+            "Percentual de desconto: 15%\n",
+            "Preço com desconto: R$2975.00\n",
+            "Produto: Mouse\n",
+            "Preço original: R$120.00\n",
+            "Percentual de desconto: 5%\n",
+            "Preço com desconto: R$114.00\n",
+            "Produto: Teclado\n",
+            "Preço original: R$250.00\n",
+            "Percentual de desconto: 5%\n",
+            "Preço com desconto: R$237.50\n",
+            "Produto: Monitor\n",
+            "Preço original: R$900.00\n",
+            "Percentual de desconto: 10%\n",
+            "Preço com desconto: R$810.00\n"
+          ]
+        }
+      ],
+      "source": [
+        "#função para calcular o desconto\n",
+        "def calcular_desconto(preco, percentual):\n",
+        "    desconto = preco * (percentual / 100)\n",
+        "    preco_com_desconto = preco - desconto\n",
+        "    return preco_com_desconto\n",
+        "\n",
+        "\n",
+        "#funçao para calcular quannto sera o percentual de desconto\n",
+        "def calcular_percentual_desconto(preco):\n",
+        "    if preco >= 1000:\n",
+        "        return 15\n",
+        "    elif preco >= 500:\n",
+        "        return 10\n",
+        "    else:\n",
+        "        return 5\n",
+        "#lista de dicionario para que eu possa acessar\n",
+        "produtos = [\n",
+        "    {'nome': 'Notebook', 'preco': 3500},\n",
+        "    {'nome': 'Mouse', 'preco': 120},\n",
+        "    {'nome': 'Teclado', 'preco': 250},\n",
+        "    {'nome': 'Monitor', 'preco': 900}\n",
+        "]\n",
+        "\n",
+        "#Estrutura de repetição para que eu possa percorre a lista de dicionario\n",
+        "# PERCENTUAL -> ELE RECEBE A FUNÇÃO QUE CALCULA QUANTO PORCENTO IRA APLICAR COM BASE NO VALOR DO PRODUTO\n",
+        "for produto in produtos:\n",
+        " percentual = calcular_percentual_desconto(produto['preco'])\n",
+        " preco_com_desconto = calcular_desconto(produto['preco'], percentual)\n",
+        "\n",
+        " print(f\"Produto: {produto['nome']}\")\n",
+        " print(f\"Preço original: R${produto['preco']:.2f}\")\n",
+        " print(f\"Percentual de desconto: {percentual}%\")\n",
+        " print(f\"Preço com desconto: R${preco_com_desconto:.2f}\")\n"
+      ]
+    }
+  ]
+}

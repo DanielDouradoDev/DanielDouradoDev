@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0c10">
+  <meta name="description" content="Portfólio de Daniel Dourado, estudante de Engenharia de Software. Projetos de desenvolvimento, dados e experiências digitais.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Daniel Dourado — Desenvolvedor & Engenharia de Software">
+  <meta property="og:description" content="Transformando problemas em soluções digitais, com foco em código, produto e experiência.">
+  <title>Daniel Dourado — Portfólio | Engenharia de Software</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio" aria-label="Daniel Dourado, voltar ao início">
+        <span class="brand-mark" aria-hidden="true">D's<span>.</span></span>
+        <span class="brand-text">Daniel Dourado<span class="brand-muted">.Dev</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a class="nav-link is-active" href="#inicio">Início</a>
+        <a class="nav-link" href="#sobre">Sobre</a>
+        <a class="nav-link" href="#projetos">Projetos</a>
+        <a class="nav-link" href="#habilidades">Habilidades</a>
+        <a class="nav-link" href="#contato">Contato</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Ativar tema claro" title="Alternar tema">
+          <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
+          <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20.9 13.1A9 9 0 0 1 10.9 3.1 9 9 0 1 0 20.9 13.1Z"/></svg>
+        </button>
+        <a class="header-contact" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
+        <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-controls="mobileNav" aria-expanded="false">
+          <span class="menu-lines" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Menu para celular" inert>
+      <a href="#inicio">Início <span>01</span></a>
+      <a href="#sobre">Sobre mim <span>02</span></a>
+      <a href="#projetos">Projetos <span>03</span></a>
+      <a href="#habilidades">Habilidades <span>04</span></a>
+      <a href="#contato">Contato <span>05</span></a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="heroTitle">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="shell hero-layout">
+        <div class="hero-content">
+          <div class="hero-topline"><span class="availability"><span class="pulse-dot"></span> Em evolução constante</span><span class="hero-divider">/</span><span class="micro-location">BRASÍLIA, BR</span></div>
+          <p class="hero-hello">Olá, eu sou Daniel Dourado <span aria-hidden="true">✳</span></p>
+          <h1 id="heroTitle">Ideias que <span class="headline-serif">ganham</span><br> <span class="accent-highlight">forma em código.</span></h1>
+          <p class="hero-description">Estudante de <strong>Engenharia de Software</strong> e desenvolvedor em formação. Gosto de entender problemas reais, desenhar soluções simples e transformá-las em experiências digitais.</p>
+          <div class="hero-buttons">
+            <a class="button button-primary" href="#projetos">Explorar projetos <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline" href="#sobre">Mais sobre mim <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-footer">
+            <div class="small-avatars" aria-hidden="true"><span>⌘</span><span>{ }</span><span>✦</span></div>
+            <span>Desenvolvimento <b>·</b> Dados <b>·</b> Produto digital</span>
+          </div>
+        </div>
+        <div class="hero-showcase">
+          <div class="photo-background" aria-hidden="true"><div class="photo-grid"></div><div class="photo-ring"></div></div>
+          <figure class="portrait-card">
+            <img src="assets/daniel.jpg" alt="Fotografia de Daniel Dourado diante de um espelho" width="640" height="640" fetchpriority="high">
+            <figcaption><span class="portrait-name">Daniel Dourado</span><span class="portrait-role">ENGENHARIA DE SOFTWARE</span></figcaption>
+          </figure>
+          <div class="floating-chip chip-top"><span class="chip-icon">✳</span><div><strong>Em construção</strong><small>Um projeto de cada vez</small></div></div>
+          <div class="floating-chip chip-bottom"><span class="code-icon">&lt;/&gt;</span> BUILD · LEARN · REPEAT</div>
+          <span class="showcase-plus plus-one" aria-hidden="true">+</span><span class="showcase-plus plus-two" aria-hidden="true">+</span>
+        </div>
+      </div>
+      <div class="shell hero-bottom"><span>PORTFÓLIO PESSOAL <i></i> 2026</span><a href="#projetos">DESLIZE PARA EXPLORAR <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <div class="specialties-strip" aria-label="Áreas de interesse">
+      <div class="shell specialties-inner"><span>DESENVOLVIMENTO WEB</span><b>✳</b><span>BACK-END & DADOS</span><b>✳</b><span>EXPERIÊNCIA DO USUÁRIO</span><b>✳</b><span>ENGENHARIA DE SOFTWARE</span></div>
+    </div>
+
+    <section class="section about-section" id="sobre" aria-labelledby="aboutTitle">
+      <div class="shell">
+        <div class="section-label reveal"><span class="label-number">01 /</span> QUEM SOU EU <span class="label-line"></span> SOBRE MIM</div>
+        <div class="about-grid">
+          <div class="about-main reveal"><h2 id="aboutTitle">Curiosidade para aprender.<br><span class="muted-title">Método para construir.</span></h2><div class="about-decor" aria-hidden="true"><div class="decor-symbol">✳</div><span>THINK → DESIGN → BUILD</span></div></div>
+          <div class="about-copy reveal"><p class="lead">Acredito que boas soluções começam com a <strong>pergunta certa</strong>, não com a primeira linha de código.</p><p>Minha experiência começou no suporte de informática, onde aprendi a investigar falhas, ouvir pessoas e resolver problemas de forma prática. Hoje, uno essa bagagem aos estudos em Engenharia de Software, programação e modelagem de dados.</p><p>Me interesso especialmente por <strong>desenvolvimento de sistemas, back-end, bancos de dados</strong> e produtos que tornam processos mais eficientes.</p><div class="about-facts"><div><small>FORMAÇÃO</small><strong>Engenharia de Software</strong><span>UDF · em andamento</span></div><div><small>BASE PROFISSIONAL</small><strong>Técnico em Informática</strong><span>Suporte & solução de problemas</span></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-section" id="projetos" aria-labelledby="projectsTitle">
+      <div class="shell">
+        <div class="section-label reveal"><span class="label-number">02 /</span> O QUE ESTOU CRIANDO <span class="label-line"></span> PROJETOS SELECIONADOS</div>
+        <div class="section-title-row reveal"><div><h2 id="projectsTitle">Projetos <span class="title-accent">em foco<span class="period">.</span></span></h2><p>Ideias, estudos e protótipos que mostram como penso, estruturo e crio soluções.</p></div><span class="project-index">05 <span>/ SELECIONADOS</span></span></div>
+        <div class="filter-bar reveal" role="group" aria-label="Filtrar projetos">
+          <button class="filter-button active" data-filter="all" aria-pressed="true">Todos <span>05</span></button>
+          <button class="filter-button" data-filter="dev" aria-pressed="false">Desenvolvimento</button>
+          <button class="filter-button" data-filter="ux" aria-pressed="false">Produto & UX</button>
+          <button class="filter-button" data-filter="ai" aria-pressed="false">IA & Dados</button>
+          <span class="filter-result" id="filterResult" aria-live="polite">5 projetos</span>
+        </div>
+        <div class="projects-grid" id="projectGrid">
+          <article class="project-card featured reveal" data-category="dev" data-project="reservei">
+            <div class="project-art art-reservei" aria-hidden="true">
+              <div class="art-topline"><span>reservei / painel</span><span class="art-dots">•••</span></div>
+              <div class="reservei-interface"><div class="reservei-sidebar"><span class="side-logo">R<span>✳</span></span><span>▥</span><span>▣</span><span>☷</span></div><div class="reservei-main"><div class="reservei-heading"><div><small>Visão geral</small><strong>Mapa de mesas</strong></div><span class="reserv-status">● AO VIVO</span></div><div class="reservei-tables"><i class="table-free"></i><i class="table-busy"></i><i class="table-free"></i><i class="table-booked"></i><i class="table-free"></i><i class="table-busy"></i><i class="table-free"></i><i class="table-booked"></i><i class="table-free"></i></div><div class="reservei-legend"><span>● Disponível</span><span>● Reservada</span><span>● Ocupada</span></div></div></div>
+              <div class="art-corner-label">CONCEITO DE INTERFACE</div>
+            </div>
+            <div class="project-description"><div class="project-meta"><span>01 / SISTEMA</span><span class="project-status">PROJETO ACADÊMICO</span></div><h3>Reservei <span aria-hidden="true">↗</span></h3><p>Gestão de reservas, lista de espera e ocupação de mesas, com foco em regras de negócio e estrutura de dados.</p><div class="project-bottom"><div class="tech-pills"><span>C</span><span>MySQL</span><span>Modelagem</span></div><button class="details-link" data-open-project="reservei" aria-label="Ver detalhes do projeto Reservei">Ver case <span aria-hidden="true">↗</span></button></div></div>
+          </article>
+
+          <article class="project-card reveal" data-category="dev ai" data-project="rota360">
+            <div class="project-art art-rota" aria-hidden="true"><div class="art-topline"><span>rota360 / intelligence</span><span class="art-dots">•••</span></div><div class="rota-visual"><div class="rota-head"><div><small>ANÁLISE FINANCEIRA</small><strong>Visão de margem</strong></div><div class="rota-brand">R<span>360</span></div></div><div class="rota-chart"><span class="chart-axis">MARGEM POR ROTA</span><svg viewBox="0 0 360 108" role="presentation" preserveAspectRatio="none"><defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#bff777" stop-opacity=".28"/><stop offset="1" stop-color="#bff777" stop-opacity="0"/></linearGradient></defs><path d="M0 96 L45 88 L86 70 L128 83 L165 47 L213 60 L247 34 L291 44 L331 12 L360 25 V108 H0Z" fill="url(#chartFill)"/><path d="M0 96 L45 88 L86 70 L128 83 L165 47 L213 60 L247 34 L291 44 L331 12 L360 25" fill="none" stroke="#bff777" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="chart-bars"><span></span><span></span><span></span><span></span></div></div></div><div class="art-corner-label">ESTUDO DE PRODUTO</div></div>
+            <div class="project-description"><div class="project-meta"><span>02 / SAAS</span><span class="project-status">CONCEITO</span></div><h3>Rota360 Intelligence <span aria-hidden="true">↗</span></h3><p>Proposta de SaaS para transportadoras focada em inteligência financeira, custos e recuperação de margem.</p><div class="project-bottom"><div class="tech-pills"><span>Dados</span><span>Arquitetura</span><span>SaaS</span></div><button class="details-link" data-open-project="rota360" aria-label="Ver detalhes do projeto Rota360 Intelligence">Ver case <span aria-hidden="true">↗</span></button></div></div>
+          </article>
+
+          <article class="project-card reveal" data-category="ux" data-project="tea">
+            <div class="project-art art-tea" aria-hidden="true"><div class="art-topline"><span>direitos tea / acessibilidade</span><span class="art-dots">•••</span></div><div class="tea-device"><div class="tea-device-header"><span class="tea-logo">●</span> direitos<span class="tea-bold">TEA</span><span class="tea-menu">☰</span></div><div class="tea-device-body"><small>INFORMAÇÃO PARA TODOS</small><h4>Seus direitos.<br><em>Mais acessíveis.</em></h4><div class="tea-cta">Explorar direitos <span>↗</span></div><div class="tea-tiles"><span></span><span></span><span></span></div></div></div><div class="tea-shape"></div><div class="art-corner-label">PROTÓTIPO UX / UI</div></div>
+            <div class="project-description"><div class="project-meta"><span>03 / DESIGN</span><span class="project-status">PROTÓTIPO</span></div><h3>Direitos TEA <span aria-hidden="true">↗</span></h3><p>Aplicativo com foco em acessibilidade para facilitar o acesso à informação sobre direitos de pessoas autistas.</p><div class="project-bottom"><div class="tech-pills"><span>Figma</span><span>Acessibilidade</span><span>UX</span></div><button class="details-link" data-open-project="tea" aria-label="Ver detalhes do projeto Direitos TEA">Ver case <span aria-hidden="true">↗</span></button></div></div>
+          </article>
+
+          <article class="project-card reveal" data-category="ux dev" data-project="easypred">
+            <div class="project-art art-easy" aria-hidden="true"><div class="art-topline"><span>easypred / dashboard</span><span class="art-dots">•••</span></div><div class="easy-interface"><div class="easy-side"><span>E.</span><i>▤</i><i>◫</i><i>◉</i></div><div class="easy-content"><div class="easy-title">Indicadores <span>↗</span></div><div class="easy-stats"><i><b>24</b><small>Registros</small></i><i><b>08</b><small>Em aberto</small></i></div><div class="easy-bars"><span style="--height:38%"></span><span style="--height:55%"></span><span style="--height:74%"></span><span style="--height:48%"></span><span style="--height:90%"></span><span style="--height:68%"></span></div></div></div><div class="art-corner-label">CONCEITO DE DASHBOARD</div></div>
+            <div class="project-description"><div class="project-meta"><span>04 / PRODUTO</span><span class="project-status">CONCEITO</span></div><h3>EasyPred <span aria-hidden="true">↗</span></h3><p>Conceito de plataforma para organizar rotinas de manutenção predial, registros e relatórios de acompanhamento.</p><div class="project-bottom"><div class="tech-pills"><span>Dashboard</span><span>UX</span><span>Produto</span></div><button class="details-link" data-open-project="easypred" aria-label="Ver detalhes do projeto EasyPred">Ver case <span aria-hidden="true">↗</span></button></div></div>
+          </article>
+
+          <article class="project-card wide-card reveal" data-category="ai" data-project="hardtech">
+            <div class="project-art art-hardtech" aria-hidden="true"><div class="art-topline"><span>hardtech / assistente inteligente</span><span class="art-dots">•••</span></div><div class="hardtech-visual"><div class="network-node"><span>⌘</span><small>ENTRADA</small></div><span class="network-edge"></span><div class="network-node network-center"><span>✳</span><small>ASSISTENTE IA</small></div><span class="network-edge"></span><div class="network-node"><span>✓</span><small>ORIENTAÇÃO</small></div></div><div class="art-corner-label">FLUXO CONCEITUAL</div></div>
+            <div class="project-description"><div class="project-meta"><span>05 / IA</span><span class="project-status">CONCEITO</span></div><h3>Hardtech IA <span aria-hidden="true">↗</span></h3><p>Estudo de um assistente inteligente para estruturar diagnósticos e tornar o suporte técnico de hardware mais eficiente.</p><div class="project-bottom"><div class="tech-pills"><span>IA</span><span>Automação</span><span>Suporte</span></div><button class="details-link" data-open-project="hardtech" aria-label="Ver detalhes do projeto Hardtech IA">Ver case <span aria-hidden="true">↗</span></button></div></div>
+          </article>
+        </div>
+        <p class="project-disclaimer">* Interfaces ilustrativas. Os projetos representam estudos, trabalhos acadêmicos e conceitos em diferentes fases de desenvolvimento.</p>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="habilidades" aria-labelledby="skillsTitle">
+      <div class="shell">
+        <div class="section-label reveal"><span class="label-number">03 /</span> CONHECIMENTO EM EVOLUÇÃO <span class="label-line"></span> HABILIDADES</div>
+        <div class="skills-grid"><div class="skills-intro reveal"><h2 id="skillsTitle">Tecnologia é<br><span class="headline-serif">ferramenta.</span><br><span class="title-accent">Resolver é o foco.</span></h2><p>Desenvolvo minha base técnica combinando teoria, prática, projetos acadêmicos e exploração de novas tecnologias.</p><div class="skills-tag"><span class="pulse-dot"></span> APRENDIZADO CONTÍNUO</div></div><div class="skills-items reveal">
+          <div class="skill-item"><span class="skill-index">01</span><div><h3>Programação & desenvolvimento</h3><p>Linguagem C, Python, HTML, CSS, JavaScript e lógica de programação.</p></div><span class="skill-arrow">↗</span></div>
+          <div class="skill-item"><span class="skill-index">02</span><div><h3>Dados & modelagem</h3><p>SQL, MySQL, modelagem MER/DER e estruturação de banco de dados.</p></div><span class="skill-arrow">↗</span></div>
+          <div class="skill-item"><span class="skill-index">03</span><div><h3>Interfaces & produto</h3><p>Figma, prototipação, acessibilidade e desenho de fluxos de usuário.</p></div><span class="skill-arrow">↗</span></div>
+          <div class="skill-item"><span class="skill-index">04</span><div><h3>Próximos passos</h3><p>Back-end, APIs, Git/GitHub e fundamentos de arquitetura de software.</p></div><span class="skill-arrow">↗</span></div>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="section path-section" id="trajetoria" aria-labelledby="pathTitle">
+      <div class="shell"><div class="section-label reveal"><span class="label-number">04 /</span> DE ONDE VENHO <span class="label-line"></span> TRAJETÓRIA</div><div class="path-layout"><div class="reveal"><h2 id="pathTitle">Uma jornada de<br><span class="title-accent">evolução.</span></h2><p class="path-intro">Minha experiência com TI é a base para o que construo hoje: soluções com propósito, organização e atenção aos detalhes.</p></div><div class="path-timeline reveal"><div class="path-item"><span class="path-marker"></span><small>HOJE</small><h3>Engenharia de Software</h3><p>Graduação na UDF e aprofundamento em desenvolvimento de sistemas, lógica e arquitetura.</p></div><div class="path-item"><span class="path-marker"></span><small>EXPERIÊNCIA</small><h3>Atuação em Tecnologia da Informação</h3><p>Suporte, manutenção, atendimento e resolução de problemas em contextos reais.</p></div><div class="path-item"><span class="path-marker"></span><small>BASE</small><h3>Formação técnica em Informática</h3><p>Primeiro contato estruturado com tecnologia, sistemas e fundamentos computacionais.</p></div></div></div></div>
+    </section>
+
+    <section class="contact-section" id="contato" aria-labelledby="contactTitle"><div class="shell"><div class="contact-surface reveal"><div class="contact-grid" aria-hidden="true"></div><div class="contact-header"><span><span class="pulse-dot"></span> DISPONÍVEL PARA CONEXÕES</span><span>05 / CONTATO</span></div><h2 id="contactTitle">O próximo projeto<br>pode começar <em>aqui.</em></h2><p>Tenho interesse em oportunidades de estágio, desenvolvimento de software e colaboração em projetos que resolvam problemas reais.</p><div class="contact-links" id="contactLinks" aria-label="Canais profissionais"><div class="contacts-pending"><span aria-hidden="true">✳</span> Canais profissionais em atualização</div></div><div class="contact-footer"><span>IDEIAS SÃO O COMEÇO. EXECUÇÃO É O CAMINHO.</span><span aria-hidden="true">↗</span></div></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="shell footer-inner"><a class="brand" href="#inicio" aria-label="Daniel Dourado, início"><span class="brand-mark">D's<span>.</span></span><span class="brand-text">Daniel Dourado<span class="brand-muted">.Dev</span></span></a><span>© <span id="currentYear">2026</span> Daniel Dourado</span></div></footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Voltar ao topo">↑</button>
+
+  <dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle"><div class="dialog-inner"><div class="dialog-head"><span class="dialog-eyebrow" id="dialogEyebrow">PROJETO</span><button class="dialog-close" id="dialogClose" type="button" aria-label="Fechar detalhes">×</button></div><h2 id="dialogTitle"></h2><p class="dialog-lead" id="dialogLead"></p><div class="dialog-rule"></div><h3>O que este projeto explora</h3><ul id="dialogPoints"></ul><div class="dialog-tools" id="dialogTools"></div><p class="dialog-note" id="dialogNote"></p><button class="button button-primary dialog-button" id="dialogDone" type="button">Voltar aos projetos <span aria-hidden="true">↗</span></button></div></dialog>
+</body>
+</html>
